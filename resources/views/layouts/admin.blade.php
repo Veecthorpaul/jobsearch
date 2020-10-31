@@ -121,7 +121,7 @@
 	<span class="close-profile"><i class="la la-close"></i></span>
 	<div class="can-detail-s">
 		@if(empty(Auth::user()->profile->avatar))
-		<div class="cst"><img src="https://www.pngfind.com/pngs/m/528-5286002_forum-admin-icon-png-nitzer-ebb-that-total.png" alt=""></div>
+		<div class="cst"><img src="{{asset('images\admin.png')}}" alt=""></div>
 	@else   
 	<div class="cst"><img src="{{asset('uploads/avatar')}}/{{Auth::user()->profile->avatar}}" alt=""></div>
 	@endif
