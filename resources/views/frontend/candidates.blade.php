@@ -17,7 +17,11 @@
 
 <section>
     <div class="block no-padding">
+<<<<<<< HEAD
         <div class="container" >
+=======
+        <div class="container">
+>>>>>>> f74396765a5fc7f17e25cad891bf019e129a5ec0
              <div class="row no-gape" style="margin-bottom: 4.15%">
                  <aside class="col-lg-3 column border-right">
                      <div class="widget">
@@ -66,15 +70,27 @@
                      </div>
                    
                      @else
+<<<<<<< HEAD
                      <div class="emply-list-sec">
                            <div class="emply-list">
                                <div class="emply-list-info">
                               
-                                   <p style="text-align: center; color: #8d8d8d"><i>No Listed Candidates</i></p>
+                                   <p style="text-align: center; color: #fb236a"><i>No Listed Candidates</i></p>
                                </div>
                                </div>
                        </div>
                        @endif
+=======
+                     <div class="emply-list-sec mb-4">
+                         <div class="emply-list">
+                             <div class="emply-list-info">
+                            
+                                 <p style="text-align: center; color: #fb236a"><i>No Listed Candidates</i></p>
+                             </div>
+                             </div>
+                     </div>
+                     @endif
+>>>>>>> f74396765a5fc7f17e25cad891bf019e129a5ec0
                 </div>
                
              </div>
