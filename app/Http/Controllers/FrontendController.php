@@ -32,10 +32,11 @@ class FrontendController extends Controller
                         ->orWhere('education','LIKE','%'.$keyword.'%')
                         ->orWhere('country','LIKE','%'.$keyword.'%')
                         ->orWhere('state','LIKE','%'.$keyword.'%')
+                        ->where('user_id', '!=', '2')
                         ->paginate(10);
                         return view('frontend.candidates',compact('candidates'));
         } else{
-            $candidates= Profile::latest()->where('user_id', '!=', '51')->paginate(10);
+            $candidates= Profile::latest()->where('user_id', '!=', '2')->paginate(10);
             return view('frontend.candidates',compact('candidates'));
         }
        
