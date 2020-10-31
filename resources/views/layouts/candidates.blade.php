@@ -113,7 +113,7 @@
 	<span class="close-profile"><i class="la la-close"></i></span>
 	<div class="can-detail-s">
 		@if(empty(Auth::user()->profile->avatar))
-		<div class="cst"><img src="{{asset('images\resource\es1.jpg')}}" alt=""></div>
+		<div class="cst"><img src="{{asset('images/candidate.png')}}" alt=""></div>
 	@else   
 	<div class="cst"><img src="{{asset('uploads/avatar')}}/{{Auth::user()->profile->avatar}}" alt=""></div>
 	@endif
