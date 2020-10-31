@@ -188,6 +188,7 @@
                                             <div class="team-img">
                                            <a href="{{route('company.index',[$com->id,$com->slug])}}"><img src="{{asset('images/company.png')}}" alt="" style="border-radius: 0px; border: none; max-width: 80%"></a> </div>
                                             @endif
+                                              <p> <a href="{{route('company.index',[$com->id,$com->slug])}}">{{$com->cname}}</a></p>
                                         </div><!-- Team -->
                                     </div>
                                
