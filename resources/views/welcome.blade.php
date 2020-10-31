@@ -268,10 +268,10 @@
                                     </div>
                                     @endif
                                     <div class="team-detail">
-                                        <h3><a href="{{route('candidate.index',[$user->id])}}">{{$user->name}}</a></h3>
+                                        <h3><a href="{{route('candidate.index',[$user->user_id])}}">{{$user->name}}</a></h3>
                                         <span>{{$user->title}}</span>
                                         <p> {{$user->country}}</p>
-                                        <a href="{{route('candidate.index',[$user->id])}}">See Profile <i class="la la-long-arrow-right"></i></a>
+                                        <a href="{{route('candidate.index',[$user->user_id])}}">See Profile <i class="la la-long-arrow-right"></i></a>
                                     </div>
                                 </div><!-- Team -->
                             </div>
@@ -283,5 +283,6 @@
         </div>
     </div>
 </section>
+
 
 @endsection

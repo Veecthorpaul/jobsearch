@@ -1,4 +1,4 @@
-@extends('layouts.companies')
+@extends('layouts.admin')
 @section('content')
 <section class="overlape">
     <div class="block no-padding">

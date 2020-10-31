@@ -23,7 +23,7 @@ class CreateJobsTable extends Migration
             $table->text('requirements');
             $table->string('gender');
             $table->integer('category_id');
-            $table->string('applicants');
+            $table->string('applicants')->nullable();
             $table->string('location');
             $table->string('level');
             $table->string('type');
