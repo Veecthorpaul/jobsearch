@@ -119,7 +119,7 @@
                                              <li><i class="la la-bars"></i><h3>Categories</h3><span>{{$company->specialization}}</span></li>
                                              <li><i class="la la-clock-o"></i><h3>Since</h3><span>{{$company->since}}</span></li>
                                              <li><i class="la la-users"></i><h3>Team Size</h3><span>{{$company->team}}</span></li>
-                                             <li><i class="la la-user"></i><h3>Followers</h3><span>15</span></li>
+
                                          </ul>
                                      </div><!-- Job Overview -->
                                      <div class="quick-form-job">
