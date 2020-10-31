@@ -74,17 +74,17 @@
                                         <i class="la la-graduation-cap"></i>
                                         @elseif($category->id == 11)
                                         <i class="la la-bullhorn"></i>
-                                        @elseif($category->id == 3)
+                                        @elseif($category->id == 21)
                                         <i class="la la-line-chart "></i>
-                                        @elseif($category->id == 4)
+                                        @elseif($category->id == 31)
                                         <i class="la la-phone"></i>
-                                        @elseif($category->id == 5)
+                                        @elseif($category->id == 41)
                                         <i class="la la-cutlery"></i>
-                                        @elseif($category->id == 6)
+                                        @elseif($category->id == 51)
                                         <i class="la la-users"></i>
-                                        @elseif($category->id == 7)
+                                        @elseif($category->id == 61)
                                         <i class="la la-building"></i>
-                                        @elseif($category->id == 8)
+                                        @elseif($category->id == 71)
                                         <i class="la la-user-md"></i>
                                         @else
                                         <i class="la la-user"></i>
