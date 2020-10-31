@@ -18,7 +18,7 @@
 <section>
     <div class="block no-padding">
         <div class="container">
-             <div class="row no-gape">
+             <div class="row no-gape" style="margin-bottom: 4.15%">
                  <aside class="col-lg-3 column border-right">
                      <div class="widget">
                          <div class="search_widget_job">
