@@ -27,7 +27,7 @@
                         <p>Register as a Candidate</p>
                         <form method="POST" action="{{ route('register') }}">
                             @csrf
-                            <input type="hidden" name="user_type" value="admin">
+                            <input type="hidden" name="user_type" value="seeker">
                             <div class="cfield">
                                 <input type="text" id="name" name="name" placeholder="Full Name"  class="{{ $errors->has('name') ? ' is-invalid' : '' }}" value="{{ old('name') }}" required>
                             </div>
