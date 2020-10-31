@@ -27,7 +27,7 @@
                         <p>Register as a Candidate</p>
                         <form method="POST" action="{{ route('register') }}">
                             @csrf
-                            <input type="hidden" name="user_type" value="admin">
+                            <input type="hidden" name="user_type" value="seeker">
                             <div class="cfield">
                                 <input type="text" id="name" name="name" placeholder="Full Name"  class="{{ $errors->has('name') ? ' is-invalid' : '' }}" value="{{ old('name') }}" required>
                             </div>
@@ -62,7 +62,7 @@
                             @csrf
                             <input type="hidden" name="user_type" value="employer">
                             <div class="cfield">
-                                <input type="text" id="name" name="name" placeholder="Full Name"  class="{{ $errors->has('name') ? ' is-invalid' : '' }}" value="{{ old('name') }}" required>
+                                <input type="text" id="name" name="name" placeholder="Employer's Name"  class="{{ $errors->has('name') ? ' is-invalid' : '' }}" value="{{ old('name') }}" required>
                                 @if ($errors->has('name'))
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $errors->first('name') }}</strong>
