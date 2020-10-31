@@ -72,7 +72,7 @@
                                     <a href="{{route('category.index',[$category->id])}}" title="">
                                         @if($category->id == 1)
                                         <i class="la la-graduation-cap"></i>
-                                        @elseif($category->id == 2)
+                                        @elseif($category->id == 11)
                                         <i class="la la-bullhorn"></i>
                                         @elseif($category->id == 3)
                                         <i class="la la-line-chart "></i>
