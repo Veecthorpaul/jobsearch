@@ -64,11 +64,11 @@
                         </div><!-- Pagination -->
                      </div>
                      @else
-                     <div class="emply-list-sec">
+                     <div class="emply-list-sec mb-4">
                          <div class="emply-list">
                              <div class="emply-list-info">
                             
-                                 <p style="text-align: center; color: #8d8d8d"><i>No Listed Candidates</i></p>
+                                 <p style="text-align: center; color: #fb236a"><i>No Listed Candidates</i></p>
                              </div>
                              </div>
                      </div>
