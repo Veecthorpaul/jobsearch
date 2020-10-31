@@ -61,12 +61,8 @@
                         </div><!-- Pagination -->
                         </div>
                         @else
-                        <div class="job-listings-sec">
-                           <div class="job-listing wtabs">
-                               <div class="job-title-sec">
+                      <div class="job-listing wtabs" style="margin-bottom:  7.3%">
                                 <p style="text-align: center; color: #fb236a"><i>No Jobs Found</i></p>
-                               </div>
-                           </div>
                        </div>
                         @endif
                         
