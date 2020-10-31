@@ -125,10 +125,7 @@
 	@else   
 	<div class="cst"><img src="{{asset('uploads/avatar')}}/{{Auth::user()->profile->avatar}}" alt=""></div>
 	@endif
-		<h3>{{auth()->user()->name}}</h3>
-		@if(Auth::user()->profile->title) 
-		<span><i>{{Auth::user()->profile->title}}</i></span>
-	@endif		
+		<h3>{{auth()->user()->name}}</h3>	
 		<p>Member Since, {{date('M Y',strtotime(Auth::user()->created_at))}}</p>
 		@if(Auth::user()->profile->state && Auth::user()->profile->country)
 		<p><i class="la la-map-marker"></i>{{Auth::user()->profile->state}} /{{Auth::user()->profile->country}}</p>
