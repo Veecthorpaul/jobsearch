@@ -18,8 +18,8 @@ class FrontendController extends Controller
 {
 
     public function index(){
-        $jobs=Job::latest()->where('status','live')->limit(6)->get();
-             $users= Profile::limit(5)->where('user_id', '!=', '11')->get();
+        $jobs=Job::latest()->where('status', 1)->limit(6)->get();
+        $users= Profile::limit(5)->where('user_id', '!=', '11')->get();
         $company = Company::latest()->limit(6)->get();
         $categories = Category::with('jobs')->get();
         return view('welcome', compact('jobs','company','categories','users'));
