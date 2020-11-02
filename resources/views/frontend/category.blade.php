@@ -47,11 +47,15 @@
                                     
                                 </div>
                                 <div class="job-style-bx">
-                                    @if($job->type=='full time')
-                                    <span class="job-is ft">Full Time</span>
-                                    @elseif($job->type=='part time')
-                                    <span class="job-is pt">Part Time</span>
-                                    @endif
+                                      @if($job->type=='full time')
+                                            <span class="job-is ft">Full Time</span>
+                                            @elseif($job->type=='part time')
+                                            <span class="job-is pt">Part Time</span>
+                                            @elseif($job->type=='intern')
+                                            <span class="job-is in">Internship</span>
+                                            @elseif($job->type=='volunteer')
+                                            <span class="job-is vt">Volunteer</span>
+                                            @endif
                                     <i> <i>Posted: {{$job->created_at->diffForHumans()}}</i></i>
                                 </div>
                             </div>
