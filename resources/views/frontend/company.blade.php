@@ -37,7 +37,7 @@
                                         
                                          <div class="job-single-info3">
                                              <h3>{{$company->cname}}</h3>
-                                             <span><i class="la la-map-marker"></i>{{$company->city}}, {{$company->country}}</span>
+                                             <span><i class="la la-map-marker"></i>{{$company->state}}, {{$company->country}}</span>
                                              <ul class="tags-jobs">
                                              <li><i class="la la-file-text"></i> Applications: {{count($applicants)}}</li>
                                              <li><i class="la la-calendar-o"></i> Post Jobs: {{count($company->jobs)}}</li>
