@@ -48,16 +48,16 @@
                                  <div class="col-lg-3">
                                      <div class="share-bar" style="text-align: center">
                                         @if(!empty($company->instagram))
-                                         <a href="#" title="" class="share-instagram"><i class="la la-instagram"></i></a>
+                                         <a href="{{$company->instagram}}" title="" class="share-instagram"><i class="la la-instagram"></i></a>
                                          @endif
                                          @if(!empty($company->facebook))
-                                         <a href="#" title="" class="share-fb"><i class="fa fa-facebook"></i></a>
+                                         <a href="{{$company->facebook}}" title="" class="share-fb"><i class="fa fa-facebook"></i></a>
                                          @endif
                                          @if(!empty($company->twitter))
-                                         <a href="#" title="" class="share-twitter"><i class="fa fa-twitter"></i></a>
+                                         <a href="{{$company->twitter}}" title="" class="share-twitter"><i class="fa fa-twitter"></i></a>
                                          @endif
                                          @if(!empty($company->linkedin))
-                                         <a href="#" title="" class="share-linkedin"><i class="fa fa-linkedin"></i></a>
+                                         <a href="linkedin" title="" class="share-linkedin"><i class="fa fa-linkedin"></i></a>
                                          @endif
                                      </div>
                                   
