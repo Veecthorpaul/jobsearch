@@ -43,12 +43,12 @@
                                  <p><i class="la la-envelope-o"></i>  <a data-toggle="modal" data-target="#exampleModalLong"  data-backdrop="false"> Email This Job </a></p>
                              </div>
                          </div><!-- Job Head -->
-                         <div class="job-details">
+                           <div class="job-details">
                              <h3>Job Description</h3>
-                             <p>{{$job->description}}</p>
+                             <p>{!! nl2br(e($job->description)) !!}</p>
                             
                              <h3>Job Requirements</h3>
-                         <p>{{$job->requirements}}</p> 
+                         <p>{!! nl2br(e($job->requirements)) !!}</p>
                          </div>
                          <div class="recent-jobs">
                              <h3>Related Jobs</h3>
