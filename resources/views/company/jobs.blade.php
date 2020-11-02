@@ -84,7 +84,7 @@
                        </div>
                      </td>
                      <td>
-                       <span class="applied-field">3+ Applied</span>
+                       <span class="applied-field">{{count($applicants)}} Applied</span>
                      </td> 
                      <td>
                        <span>{{date('d M Y',strtotime($job->created_at))}} - {{date('d M Y',strtotime($job->lastdate))}}</span> 
