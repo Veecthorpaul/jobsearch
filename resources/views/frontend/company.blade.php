@@ -69,7 +69,7 @@
                                  <div class="col-lg-8 column">		
                                      <div class="job-details">
                                          <h3>About {{$company->cname}}</h3>
-                                         <p>{{$company->description}} </p>
+                                         <p style="text-align: justify">{!! nl2br(e($company->description)) !!} </p>
                                        </div>
                                      <div class="recent-jobs">
                                          <h3>Jobs from {{$company->cname}}</h3>
