@@ -149,8 +149,8 @@
                                          <span class="pf-title">Status</span>
                                          <div class="pf-field">
                                              <select data-placeholder="Please Select Status" class="chosen" name="status">
-                                                <option>Live</option>
-                                                <option>Draft</option>
+                                                 <option value="1">Live</option>
+                                                <option value="2">Draft</option>
                                                 
                                             </select>
                                          </div>
