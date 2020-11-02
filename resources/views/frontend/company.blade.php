@@ -57,7 +57,7 @@
                                          <a href="{{$company->twitter}}" title="" class="share-twitter"><i class="fa fa-twitter"></i></a>
                                          @endif
                                          @if(!empty($company->linkedin))
-                                         <a href="linkedin" title="" class="share-linkedin"><i class="fa fa-linkedin"></i></a>
+                                         <a href="{{$company->linkedin}}" title="" class="share-linkedin"><i class="fa fa-linkedin"></i></a>
                                          @endif
                                      </div>
                                   
