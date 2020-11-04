@@ -26,13 +26,7 @@
                                  <div class="col-lg-9">
                                      <div class="job-single-head3 emplye">
                                      <div class="job-thumb"> 
-                                        @if(empty($company->avatar))
                                         <img src="{{asset('images/company.png')}}" alt="">
-                                       @else   
-                                           <img src="{{asset('uploads/logo')}}/{{$company->avatar}}" alt="" >
-                                       @endif
-                                        
-                                        
                                         </div>
                                         
                                          <div class="job-single-info3">
