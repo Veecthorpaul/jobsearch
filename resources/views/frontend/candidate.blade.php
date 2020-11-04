@@ -33,16 +33,16 @@
                     <div class="cand-single-user">
                         <div class="share-bar circle">
                             @if(!empty($user->profile->linkedin))
-                             <a href="#" title="" class="share-linkedin"><i class="la la-linkedin"></i></a>
+                             <a href="{{$user->profile->linkedin}}" title="" class="share-linkedin"><i class="la la-linkedin"></i></a>
                              @endif
                              @if(!empty($user->profile->facebook))
-                             <a href="#" title="" class="share-facebook"><i class="la la-facebook"></i></a>
+                             <a href="{{$user->profile->facebook}}" title="" class="share-facebook"><i class="la la-facebook"></i></a>
                              @endif
                              @if(!empty($user->profile->twitter))
-                             <a href="#" title="" class="share-twitter"><i class="la la-twitter"></i></a>
+                             <a href="{{$user->profile->twitter}}" title="" class="share-twitter"><i class="la la-twitter"></i></a>
                              @endif
                              @if(!empty($user->profile->instagram))
-                             <a href="#" title="" class="share-instagram"><i class="la la-instagram"></i></a>
+                             <a href="{{$user->profile->instagram}}" title="" class="share-instagram"><i class="la la-instagram"></i></a>
                              @endif
                          </div>
                          <div class="can-detail-s">
