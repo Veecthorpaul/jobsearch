@@ -113,9 +113,9 @@ class FrontendController extends Controller
         
     }
 
-    public function job($id,Job $job){
-        $similar = Job::latest()->where('category_id', $job->category_id)->where('id', '!=', $job->id)->get();
-        
+     public function job($id){
+        $job = Job::find($id);
+        $similar = Job::where('category_id', $job->category_id)->where('id', '!=', $job->id)->get();
         return view('frontend.job',compact('job','similar'));
     }
  
