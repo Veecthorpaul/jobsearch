@@ -60,14 +60,14 @@
                                         <div class="job-title-sec">
                                             @if(!empty($job->company->avatar))
                                         <div class="c-logo"> 
-                                            <img src="{{asset('uploads/logo')}}/{{$job->company->avatar}}" alt="Image" style="width: 80%">
+                                       
+                                            <div class="c-logo"><a href="{{route('jobs.show',[$job->id,$job->slug])}}">     <img src="{{asset('uploads/logo')}}/{{$job->company->avatar}}" alt="Image" style="width: 80%"></a>
                                          </div>
                                          @else
-                                         <div class="c-logo"> 
-                                            <img src="{{asset('images\resource\l1.png')}}" alt="">
+                                         <div class="c-logo"><a href="{{route('jobs.show',[$job->id,$job->slug])}}"> <img src="{{asset('images\resource\l1.png')}}" alt=""></a>
                                          </div>
                                          @endif
-                                            <h3><a href="#" title="">{{$job->title}}</a></h3>
+                                            <h3><a href="{{route('jobs.show',[$job->id,$job->slug])}}" title="">{{$job->title}}</a></h3>
                                             <span>{{$job->category->name}}</span>
                                             <div class="job-lctn"><i class="la la-map-marker"></i>{{$job->location}}</div>
                                         </div>
