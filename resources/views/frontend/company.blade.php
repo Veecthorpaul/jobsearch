@@ -80,7 +80,7 @@
                                                 <div class="job-listing wtabs noimg">
                                                     <div class="job-title-sec">
                                                         <h3><a href="{{route('jobs.show',[$job->id,$job->slug])}}" title="">{{$job->title}}</a></h3>
-                                                        <span>{{$job->slug}}</span>
+                                                        <span>{{$job->category->name}}</span>
                                                         <div class="job-lctn"><i class="la la-map-marker"></i>{{$job->location}}</div>
                                                     </div>
                                                     <div class="job-style-bx">
