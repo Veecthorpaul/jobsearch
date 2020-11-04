@@ -45,8 +45,8 @@ class FrontendController extends Controller
     public function candidate($id){
         
         $user = User::findOrFail($id);
-        $education = Experience::where('user_id', $id)->where('type', 'education')->get();
-        $work = Experience::where('user_id', $id)->where('type', 'work')->get();
+        $education = Experience::latest()->where('user_id', $id)->where('type', 'education')->get();
+        $work = Experience::latest()->where('user_id', $id)->where('type', 'work')->get();
         return view('frontend.candidate',compact('user','education','work')); 
     }
 
@@ -71,7 +71,7 @@ class FrontendController extends Controller
     }
 
     public function company($id ,Company $company){
-        $jobs = Job::where('user_id',$id)->get();
+        $jobs = Job::latest()->where('user_id',$id)->get();
         $applicants = Job::has('users')->where('user_id',$company->id)->paginate(2);
         return view('frontend.company',compact('company','applicants')); 
     }
@@ -114,7 +114,7 @@ class FrontendController extends Controller
     }
 
     public function job($id,Job $job){
-        $similar = Job::where('category_id', $job->category_id)->where('id', '!=', $job->id)->get();
+        $similar = Job::latest()->where('category_id', $job->category_id)->where('id', '!=', $job->id)->get();
         
         return view('frontend.job',compact('job','similar'));
     }
