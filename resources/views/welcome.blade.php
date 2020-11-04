@@ -180,14 +180,9 @@
                                 @foreach($company as $com)
                                     <div class="col-lg-2 carousel-cell">
                                         <div class="tea">
-                                            @if(!empty($com->avatar))
-                                            <div class="team-img">
-                                            <a href="{{route('company.index',[$com->id,$com->slug])}}"><img src="{{asset('uploads/logo')}}/{{$com->avatar}}" alt="" style="border-radius: 0%; border: none; max-width: 80%"></a>
-                                            </div>
-                                            @else
                                             <div class="team-img">
                                            <a href="{{route('company.index',[$com->id,$com->slug])}}"><img src="{{asset('images/company.png')}}" alt="" style="border-radius: 0px; border: none; max-width: 80%"></a> </div>
-                                            @endif
+                                          
                                               <p> <a href="{{route('company.index',[$com->id,$com->slug])}}">{{$com->cname}}</a></p>
                                         </div><!-- Team -->
                                     </div>
@@ -259,15 +254,9 @@
                             @foreach($users as $user)
                             <div class="col-lg-3">
                                 <div class="team">
-                                    @if(!empty($user->profile->avatar))
-                                    <div class="team-img">
-                                    <a href="{{route('candidate.index',[$user->user_id])}}"><img src="{{asset('uploads/avatar')}}/{{$user->profile->avatar}}" alt="" style="max-width:50%"></a>
-                                    </div>
-                                    @else
                                     <div class="team-img">
                                    <a href="{{route('candidate.index',[$user->user_id])}}"> <img src="{{asset('images/candidate.png')}}" alt="" style="max-width:50%"></a>
                                     </div>
-                                    @endif
                                     <div class="team-detail">
                                         <h3><a href="{{route('candidate.index',[$user->user_id])}}">{{$user->name}}</a></h3>
                                         <span>{{$user->title}}</span>
