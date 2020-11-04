@@ -50,38 +50,38 @@
                              <h3>Job Requirements</h3>
                          <p>{!! nl2br(e($job->requirements)) !!}</p>
                          </div>
-                         <div class="recent-jobs">
+                                               <div class="recent-jobs">
                              <h3>Related Jobs</h3>
                              <div class="job-list-modern">
                                 @if(count($similar) > 0)
                                  <div class="job-listings-sec no-border">
-                                     @foreach ($similar as $job)
+                                     @foreach ($similar as $related)
                                      <div class="job-listing wtabs">
                                         <div class="job-title-sec">
-                                            @if(!empty($job->company->avatar))
+                                            @if(!empty($related->company->avatar))
                                         <div class="c-logo"> 
                                        
-                                            <div class="c-logo"><a href="{{route('jobs.show',[$job->id,$job->slug])}}">     <img src="{{asset('uploads/logo')}}/{{$job->company->avatar}}" alt="Image" style="width: 80%"></a>
+                                            <div class="c-logo"><a href="{{route('jobs.show',[$related->id,$related->slug])}}">     <img src="{{asset('uploads/logo')}}/{{$related->company->avatar}}" alt="Image" style="width: 80%"></a>
                                          </div>
                                          @else
-                                         <div class="c-logo"><a href="{{route('jobs.show',[$job->id,$job->slug])}}"> <img src="{{asset('images\resource\l1.png')}}" alt=""></a>
+                                         <div class="c-logo"><a href="{{route('jobs.show',[$related->id,$related->slug])}}"> <img src="{{asset('images\resource\l1.png')}}" alt=""></a>
                                          </div>
                                          @endif
-                                            <h3><a href="{{route('jobs.show',[$job->id,$job->slug])}}" title="">{{$job->title}}</a></h3>
-                                            <span>{{$job->category->name}}</span>
-                                            <div class="job-lctn"><i class="la la-map-marker"></i>{{$job->location}}</div>
+                                            <h3><a href="{{route('jobs.show',[$related->id,$related->slug])}}" title="">{{$related->title}}</a></h3>
+                                            <span>{{$related->category->name}}</span>
+                                            <div class="job-lctn"><i class="la la-map-marker"></i>{{$related->location}}</div>
                                         </div>
                                         <div class="job-style-bx">
-                                            @if($job->type=='full time')
+                                            @if($related->type=='full time')
                                             <span class="job-is ft">Full Time</span>
-                                            @elseif($job->type=='part time')
+                                            @elseif($related->type=='part time')
                                             <span class="job-is pt">Part Time</span>
-                                            @elseif($job->type=='intern')
+                                            @elseif($related->type=='intern')
                                             <span class="job-is in">Internship</span>
-                                            @elseif($job->type=='volunteer')
+                                            @elseif($related->type=='volunteer')
                                             <span class="job-is vt">Volunteer</span>
                                             @endif
-                                    <i> <i>Posted: {{$job->created_at->diffForHumans()}}</i></i>
+                                    <i> <i>Posted: {{$related->created_at->diffForHumans()}}</i></i>
                                         </div>
                                     </div>
                                      @endforeach
