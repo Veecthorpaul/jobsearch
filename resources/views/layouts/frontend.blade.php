@@ -206,7 +206,7 @@
 </div>
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-<script src="{{asset('js\jquery.min.js')}}" type="text/javascript"></script>
+{{-- <script src="{{asset('js\jquery.min.js')}}" type="text/javascript"></script> --}}
 <script src="{{asset('js\modernizr.js')}}" type="text/javascript"></script>
 <script src="{{asset('js\script.js')}}" type="text/javascript"></script>
 <script src="{{asset('js\bootstrap.min.js')}}" type="text/javascript"></script>
