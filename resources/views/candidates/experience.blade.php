@@ -299,6 +299,7 @@ Logout
         <form action="{{route('addexperience')}}" method="post">
             @csrf
             <input type="hidden" name="type" value="work">
+             <input type="hidden" name="organization" value="work">
              <div class="row">
                  <div class="col-lg-12">
                      <span class="pf-title">Company</span>
@@ -364,6 +365,7 @@ Logout
                 @csrf
                 <input type="hidden" name="type" value="work">
                 <input type="hidden" id="job_id" name="job_id">
+                 <input type="hidden" name="organization" value="work">
                  <div class="row">
                      <div class="col-lg-12">
                          <span class="pf-title">Company</span>
