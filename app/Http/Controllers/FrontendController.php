@@ -33,10 +33,10 @@ class FrontendController extends Controller
                         ->orWhere('country','LIKE','%'.$keyword.'%')
                         ->orWhere('state','LIKE','%'.$keyword.'%')
                         ->orWhere('user_id', '!=', '11')
-                        ->paginate(10);
+                        ->paginate(5);
                         return view('frontend.candidates',compact('candidates'));
         } else{
-            $candidates= Profile::where('user_id', '!=', '11')->paginate(10);
+            $candidates= Profile::where('user_id', '!=', '11')->paginate(5);
             return view('frontend.candidates',compact('candidates'));
         }
        
@@ -60,11 +60,11 @@ class FrontendController extends Controller
                         ->orWhere('specialization','LIKE','%'.$keyword.'%')
                         ->orWhere('city','LIKE','%'.$keyword.'%')
                         ->orWhere('state','LIKE','%'.$keyword.'%')
-                        ->paginate(10);
+                        ->paginate(5);
                         return view('frontend.companies',compact('companies'));
         }
         else{
-            $companies = Company::paginate(4);
+            $companies = Company::paginate(5);
             return view('frontend.companies',compact('companies'));
         }
        
