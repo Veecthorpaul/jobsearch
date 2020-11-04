@@ -24,6 +24,7 @@ class FrontendController extends Controller
         $categories = Category::with('jobs')->get();
         return view('welcome', compact('jobs','company','categories','users'));
     }
+    
     public function candidates(Request $request) {
         $keyword = $request->get('search');
         if($keyword){
@@ -32,11 +33,10 @@ class FrontendController extends Controller
                         ->orWhere('education','LIKE','%'.$keyword.'%')
                         ->orWhere('country','LIKE','%'.$keyword.'%')
                         ->orWhere('state','LIKE','%'.$keyword.'%')
-                        ->orWhere('user_id', '!=', '11')
                         ->paginate(5);
                         return view('frontend.candidates',compact('candidates'));
         } else{
-            $candidates= Profile::where('user_id', '!=', '11')->paginate(5);
+            $candidates= Profile::latest()->where('user_id', '!=', '2')->paginate(5);
             return view('frontend.candidates',compact('candidates'));
         }
        
