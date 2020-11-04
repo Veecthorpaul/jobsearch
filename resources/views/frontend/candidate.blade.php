@@ -109,12 +109,11 @@
                                      <div class="edu-history-sec mt-4" id="experience">
                                          <h2>Work Experience</h2>
                                          @foreach($work as $job)
-                                         <div class="edu-history style2">
-                                             <i></i>
+                                        <div class="edu-history style2">
                                              <div class="edu-hisinfo">
-                                                 <h3>Web Designer <span>Inwave Studio</span></h3>
-                                                 <i>2008 - 2012</i>
-                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                                                 <h3>{{$job->qualification}}<span>{{$job->name}}</span></h3>
+                                                 <i>{{$job->start}} - {{$job->end}}</i>
+                                                 <p>{{ \Illuminate\Support\Str::limit($job->description, 150, $end='...') }}</p>
                                              </div>
                                          </div>
                                        @endforeach
