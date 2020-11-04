@@ -273,6 +273,5 @@
         </div>
     </div>
 </section>
-
-<script src="{{asset('js\jquery.min.js')}}" type="text/javascript"></script>
+{{-- <script src="{{asset('js\jquery.min.js')}}" type="text/javascript"></script> --}}
 @endsection
