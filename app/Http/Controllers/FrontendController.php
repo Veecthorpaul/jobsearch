@@ -36,7 +36,7 @@ class FrontendController extends Controller
                         ->paginate(10);
                         return view('frontend.candidates',compact('candidates'));
         } else{
-            $candidates= Profile::latest()->where('user_id', '!=', '11')->paginate(10);
+            $candidates= Profile::where('user_id', '!=', '11')->paginate(10);
             return view('frontend.candidates',compact('candidates'));
         }
        
@@ -64,7 +64,7 @@ class FrontendController extends Controller
                         return view('frontend.companies',compact('companies'));
         }
         else{
-            $companies = Company::latest()->paginate(4);
+            $companies = Company::paginate(4);
             return view('frontend.companies',compact('companies'));
         }
        
