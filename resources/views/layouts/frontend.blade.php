@@ -20,10 +20,6 @@
 <link rel="stylesheet" type="text/css" href="{{asset('css\bootstrap.css')}}">
 <link rel="stylesheet" type="text/css" href="{{asset('css\flick.css')}}">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>  
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/additional-methods.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 </head>
 <style media="screen">
 	.carousel-cell {
@@ -206,7 +202,12 @@
 </div>
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-{{-- <script src="{{asset('js\jquery.min.js')}}" type="text/javascript"></script> --}}
+<script src="{{asset('js\jquery.min.js')}}" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>var $oldjQuery = $.noConflict(true);</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/additional-methods.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 <script src="{{asset('js\modernizr.js')}}" type="text/javascript"></script>
 <script src="{{asset('js\script.js')}}" type="text/javascript"></script>
 <script src="{{asset('js\bootstrap.min.js')}}" type="text/javascript"></script>
